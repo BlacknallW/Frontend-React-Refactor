@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 
 html {
     background-image: url("./images/backlit-beach-boats-585758.jpg");
@@ -11,6 +11,7 @@ html {
     background-attachment: fixed;
     background-size: cover;
 }
+
 nav ul {
     background-color: #333;
     /* float:right; */
@@ -21,17 +22,20 @@ nav ul {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
 
 }
-nav li:hover{
+
+nav li:hover {
     background-color: #4b4a5c;
 }
+
 nav ul li {
     margin: 0px;
     /* display: inline-block; */
-    
+
 }
+
 nav a {
     display: block;
     color: white;
@@ -56,14 +60,15 @@ main {
     flex-shrink: 0;
     position: relative;
     transition: box-shadow 0.3s;
-    animation:fadeIn 2.5s ease;
+    animation: fadeIn 2.5s ease;
     border-radius: 20px;
     padding: 4.5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
+
 /* below is the grid class that creates a grid for images */
 .grid {
     display: grid;
@@ -74,8 +79,9 @@ main {
     grid-template-columns: 25% 50% 25%;
     width: 100%;
     margin-left: 50px;
-    
+
 }
+
 /* Centered text */
 /*  each image is  */
 .image1 {
@@ -85,75 +91,84 @@ main {
     grid-column-end: 3;
     /* Centered text */
 
-   /* width: 550px; */
-   /* /height: 200px;  */
+    /* width: 550px; */
+    /* /height: 200px;  */
     overflow: hidden;
 
 }
+
 .image1img {
     width: 100%;
     height: 100%;
-    
+
     overflow: hidden;
 
 }
+
 .image2 {
     grid-row-start: 1;
     grid-column-start: 3;
-    grid-row-end: 1; 
+    grid-row-end: 1;
     grid-column-end: 3;
     width: 100%;
     height: 100%;
 }
+
 .image3 {
     grid-row-start: 2;
-    grid-column-start:1;
-    grid-row-end: 2; 
+    grid-column-start: 1;
+    grid-row-end: 2;
     grid-column-end: 1;
     width: 100%;
     height: 87.2%;
 }
+
 .image4 {
     grid-row-start: 2;
     grid-column-start: 2;
-    grid-row-end: 2; 
+    grid-row-end: 2;
     grid-column-end: 2;
     width: 100%;
     height: 87.2%;
 }
+
 .image5 {
     grid-row-start: 2;
     grid-column-start: 3;
-    grid-row-end: 2; 
+    grid-row-end: 2;
     grid-column-end: 3;
     width: 100%;
     height: 87.2%;
 }
+
 .flexbox {
     display: flex;
 }
+
 .info-box {
     display: grid;
     grid-template-columns: 322px;
     grid-template-rows: 250px 370px 250px;
-    float:right;
+    float: right;
     border: 1px solid black;
-    background-color: #1a1e21; 
+    background-color: #1a1e21;
     background-size: cover;
     /* width: 20%; */
-    
+
 
 }
+
 .weather-box {
     background-image: url("./images/dawn-evening-gradation-1544880.jpg");
     background-size: cover;
     display: grid;
     justify-self: center;
-    grid-template-columns: 62.5px 62.5px 62.5px 62.5px; 
+    grid-template-columns: 62.5px 62.5px 62.5px 62.5px;
     grid-template-rows: 25px 100px 60px 25px;
-    color:white;
-    
+    color: white;
+
 }
+
 .city-name {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -163,9 +178,10 @@ main {
     text-align: center;
     background-color: rgba(33, 40, 46, 0.4)
 }
+
 .day1 {
     grid-column-start: 1;
-    grid-column-end:2;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
     width: 125px;
@@ -174,6 +190,7 @@ main {
     font-size: 50px;
     border-bottom: 1px solid white
 }
+
 .condition-list {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -185,65 +202,73 @@ main {
     list-style: none;
     border-bottom: 1px solid white
 }
+
 .day2 {
     grid-column-start: 1;
     grid-column-end: 1;
-    grid-row-start:3;
-    grid-row-end:3;
-    width:auto;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: auto;
     padding: 20px;
 }
+
 .day3 {
     grid-column-start: 2;
     grid-column-end: 2;
-    grid-row-start:3;
-    grid-row-end:3;
-    width:auto;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: auto;
     padding: 20px;
 }
+
 .day4 {
     grid-column-start: 3;
     grid-column-end: 3;
-    grid-row-start:3;
-    grid-row-end:3;
+    grid-row-start: 3;
+    grid-row-end: 3;
     width: auto;
     padding: 20px;
 }
+
 .day5 {
     grid-column-start: 4;
     grid-column-end: 4;
-    grid-row-start:3;
-    grid-row-end:3;
+    grid-row-start: 3;
+    grid-row-end: 3;
     width: auto;
     padding: 20px;
 }
+
 .days {
     font-size: 12px;
     text-align: center;
 }
+
 .ext-forecast {
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start:4;
-    grid-row-end:4;
+    grid-row-start: 4;
+    grid-row-end: 4;
     text-align: center;
-    width:250px;
+    width: 250px;
     align-self: center;
     border-top: 1px solid white;
     margin-top: 50px;
     padding-top: 10px;
     font-size: 12px;
 }
+
 .location-box {
-    grid-column-start:1;
+    grid-column-start: 1;
     grid-row-start: 2;
-    
+
     list-style: none;
     justify-items: center;
-    
+
 }
+
 .link-list {
-    list-style-type:none;
+    list-style-type: none;
     padding-inline-start: 0px;
     margin: 0px;
 
@@ -254,63 +279,70 @@ main {
     text-decoration: none;
 }
 
-.link-list li:hover{
+.link-list li:hover {
     background-color: #4b4a5c;
     color: white;
 }
 
-.link-list li:first-child{
+.link-list li:first-child {
     background-color: #c89489
 }
-.home{ 
+
+.home {
     grid-row: auto;
     list-style: none;
-    margin:10px;
+    margin: 10px;
     padding: 10px;
     text-align: center;
 }
+
 .Flights {
     grid-row: auto;
     background-color: #b8b3b3;
     list-style: none;
-    margin:10px;
+    margin: 10px;
     padding: 10px;
     text-align: center;
 
-    
+
 }
-.Accomodations{
+
+.Accomodations {
     background-color: #b8b3b3;
     list-style: none;
-    margin:10px;
+    margin: 10px;
     padding: 10px;
     text-align: center;
 }
-.Restaurants{
-    background-color:#b8b3b3;
-    list-style:none;
-    margin:10px;
-    padding: 10px;
-    text-align: center;
-}
-.MainAttractions{
+
+.Restaurants {
     background-color: #b8b3b3;
-    margin:10px;
+    list-style: none;
+    margin: 10px;
     padding: 10px;
     text-align: center;
 }
-.Tours{
+
+.MainAttractions {
     background-color: #b8b3b3;
-    margin:10px;
+    margin: 10px;
     padding: 10px;
     text-align: center;
 }
-.Shopping{
+
+.Tours {
     background-color: #b8b3b3;
-    margin:10px;
+    margin: 10px;
     padding: 10px;
     text-align: center;
-    
+}
+
+.Shopping {
+    background-color: #b8b3b3;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
 }
 
 .currency-box {
@@ -322,19 +354,19 @@ main {
 }
 
 .form-box {
-    display:grid;
+    display: grid;
     grid-template-columns: 116px 116px 116px;
     grid-template-rows: 41px 41px 41px 41px 41px 41px;
     border: 1px solid black;
 }
 
-.form-box *{
+.form-box * {
     font-size: 12px;
     color: white
 }
 
 .trip-box {
-    display:grid;
+    display: grid;
     grid-row: 1;
     grid-column: 1;
     grid-template-columns: auto;
@@ -369,13 +401,14 @@ main {
 }
 
 .currency-input-column {
-    display:grid;
-    grid-row:1;
+    display: grid;
+    grid-row: 1;
     grid-column: 2;
     grid-template-columns: auto;
     grid-template-rows: 20.5px 20.5px;
-    
+
 }
+
 .label {
     grid-row: 1;
     width: 100%;
@@ -392,11 +425,11 @@ main {
 .calculate {
     grid-column: 3;
     grid-row: 1;
-    height:50%;
+    height: 50%;
     width: 50%;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
-    display:block;
+    display: block;
     margin-top: 10px;
     border-radius: 10px;
     background-color: rgba(35, 42, 48, .4)
@@ -419,7 +452,7 @@ main {
 }
 
 .cost-tab {
-    grid-row:2;
+    grid-row: 2;
     grid-column: 3;
     font-size: 15px;
     margin-top: 10px;
@@ -427,29 +460,36 @@ main {
 }
 
 .hotel {
-    display:grid;
-    grid-row:3;
+    display: grid;
+    grid-row: 3;
     grid-column: 1;
     grid-template-columns: 58px 58px;
     grid-template-rows: 41px;
 }
 
-.hotel-box, .entertainment-box, .food-box, .transportation-box {
+.hotel-box,
+.entertainment-box,
+.food-box,
+.transportation-box {
     grid-row: 1;
     grid-column: 2;
-    height:90%;
+    height: 90%;
     justify-self: right;
 }
 
-.hotel-name, .food-name, .transportation-name, .entertainment-name {
-    grid-row:1;
+.hotel-name,
+.food-name,
+.transportation-name,
+.entertainment-name {
+    grid-row: 1;
     grid-column: 1;
     padding: 10px;
-    
+
 }
+
 .food {
-    display:grid;
-    grid-row:4;
+    display: grid;
+    grid-row: 4;
     grid-column: 1;
     grid-template-columns: 58px 58px;
     grid-template-rows: 41px;
@@ -461,8 +501,8 @@ main {
 }
 
 .entertainment {
-    display:grid;
-    grid-row:5;
+    display: grid;
+    grid-row: 5;
     grid-column: 1;
     grid-template-columns: 58px 58px;
     grid-template-rows: 41px;
@@ -476,11 +516,14 @@ main {
     grid-template-rows: 41px;
 }
 
-.hotel-us-cost, .food-us-cost, .entertainment-us-cost, .transportation-us-cost {
+.hotel-us-cost,
+.food-us-cost,
+.entertainment-us-cost,
+.transportation-us-cost {
     grid-column: 2;
     padding-top: 10px;
     padding-left: 40px
-} 
+}
 
 .hotel-us-cost {
     grid-row: 3;
@@ -498,7 +541,10 @@ main {
     grid-row: 6;
 }
 
-.hotel-user-cost, .food-user-cost, .transportation-user-cost, .entertainment-user-cost {
+.hotel-user-cost,
+.food-user-cost,
+.transportation-user-cost,
+.entertainment-user-cost {
     grid-column: 3;
     padding-top: 10px;
 }
@@ -509,8 +555,8 @@ main {
 }
 
 .food-user-cost {
-    grid-row:4;
-    grid-column:3;
+    grid-row: 4;
+    grid-column: 3;
 }
 
 .entertainment-user-cost {
@@ -525,13 +571,14 @@ main {
 
 
 
-@media all and (max-width: 768px){
-    .flexbox{
+@media all and (max-width: 768px) {
+    .flexbox {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .grid{
+
+    .grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

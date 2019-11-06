@@ -7,3 +7,4 @@ export default class Brazil extends React.Component{
         return <BrazilContent />
     }
 }
+

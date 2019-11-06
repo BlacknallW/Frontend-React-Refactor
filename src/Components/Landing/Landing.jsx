@@ -4,9 +4,9 @@ import ParrotCamo from "./images/animal-brazil-camouflage-57021.jpg";
 import ArrailDoCabo from "./images/arraildocabo.jpg";
 import CachoeiraDoSerrado from "./images/brazil-cachoeira-do-serrado-cliff-1068795.jpg";
 import USFlag from "./images/americanflag.jpg";
-import BayBridge from "./images/bay-bridge-connection-2872915.jpg"
-import KeyWest from "./images/atlantic-ocean-beach-blue-sky-2785216.jpg"
-import NewYork from "./images/buildings-city-city-view-597909.jpg"
+import BayBridge from "./images/bay-bridge-connection-2872915.jpg";
+import KeyWest from "./images/atlantic-ocean-beach-blue-sky-2785216.jpg";
+import NewYork from "./images/buildings-city-city-view-597909.jpg";
 
 export default function LandingContent() {
     return (
@@ -167,11 +167,7 @@ export default function LandingContent() {
             </div>
             <div class="united-states-container">
                 <div class="united-states-content">
-                    <img
-                        src={USFlag}
-                        class="image"
-                        alt="US Flag"
-                    />
+                    <img src={USFlag} class="image" alt="US Flag" />
                     <a href="US.html">
                         <h1>The United States</h1>
                     </a>
