@@ -1,0 +1,102 @@
+.weather-box {
+    background-image: url("dawn-evening-gradation-1544880.jpg");
+    background-size: cover;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 62.5px 62.5px 62.5px 62.5px; 
+    grid-template-rows: 25px 100px 60px 25px;
+    color:white;
+}
+
+.city-name {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(33, 40, 46, 0.4)
+}
+
+.day1 {
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 125px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    border-bottom: 1px solid white
+}
+
+.condition-list {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 125px;
+    text-align: center;
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.day2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:3;
+    grid-row-end:3;
+    width:auto;
+    padding: 20px;
+}
+
+.day3 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end:3;
+    width:auto;
+    padding: 20px;
+}
+
+.day4 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:3;
+    width: auto;
+    padding: 20px;
+}
+
+.day5 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start:3;
+    grid-row-end:3;
+    width: auto;
+    padding: 20px;
+}
+
+.days {
+    font-size: 12px;
+    text-align: center;
+}
+
+.ext-forecast {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:4;
+    grid-row-end:4;
+    text-align: center;
+    width:250px;
+    align-self: center;
+    border-top: 1px solid white;
+    margin-top: 50px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.location-box {
+    grid-column-start:1;
+    grid-row-start: 2;
+    border: 1px solid black;
+}

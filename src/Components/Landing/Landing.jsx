@@ -11,14 +11,15 @@ import NewYork from "./images/buildings-city-city-view-597909.jpg";
 export default function LandingContent() {
     return (
         <React.Fragment>
-            <div className="introduction-container">
-                <h2>Welcome to NSAmericas! Where would you like to go?</h2>
+            <div className="introduction-container hero is-link">
+                <h2 className="title hero-body">Welcome to NSAmericas! Where would you like to go?</h2>
             </div>
-            <div className="brazil-container">
-                <div className="brazil-content">
+            <main className="tile is-ancestor section">
+            <div className="brazil-container section tile is-parent">
+                <div className="brazil-content box tile is-child">
                     <img src={BrazilFlag} className="image" alt="Brazil Flag" />
                     <a href="Brazil.html">
-                        <h1>Brazil</h1>
+                        <h1 className="title">Brazil</h1>
                     </a>
                     <p>
                         With its fun and festive vibe, Brazil has much to see
@@ -165,11 +166,11 @@ export default function LandingContent() {
                     </a>
                 </div>
             </div>
-            <div class="united-states-container">
-                <div class="united-states-content">
-                    <img src={USFlag} class="image" alt="US Flag" />
+            <div className="united-states-container tile is-parent">
+                <div className="united-states-content tile is-child box">
+                    <img src={USFlag} className="image" alt="US Flag" />
                     <a href="US.html">
-                        <h1>The United States</h1>
+                        <h1 className="title">The United States</h1>
                     </a>
                     <p>
                         Land of the Free and Home of the Brave, the United
@@ -186,7 +187,7 @@ export default function LandingContent() {
                         >
                             <img
                                 src={BayBridge}
-                                class="imagecontent"
+                                className="imagecontent"
                                 alt="Golden Gate Bridge"
                                 rel="noreferrer noopener"
                             />
@@ -218,7 +219,7 @@ export default function LandingContent() {
                         >
                             <img
                                 src={KeyWest}
-                                class="imagecontent"
+                                className="imagecontent"
                                 alt="Key West Sandy Beach"
                             />
                         </a>
@@ -258,7 +259,7 @@ export default function LandingContent() {
                         >
                             <img
                                 src={NewYork}
-                                class="imagecontent"
+                                className="imagecontent"
                                 alt="New York Cityscape"
                             />
                         </a>
@@ -307,7 +308,7 @@ export default function LandingContent() {
                     <br />
                     <h3>Media:</h3>
                     <iframe
-                        class="usvid"
+                        className="usvid"
                         src="https://www.youtube.com/embed/98H5AN_vfOY"
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -316,10 +317,11 @@ export default function LandingContent() {
                     ></iframe>
                     <br />
                     <a href="#top">
-                        <button class="totop">Back to top</button>
+                        <button className="totop">Back to top</button>
                     </a>
                 </div>
             </div>
+            </main>
         </React.Fragment>
     );
 }

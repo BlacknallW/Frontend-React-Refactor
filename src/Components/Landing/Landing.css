@@ -6,51 +6,15 @@
   word-spacing: 1.5px
 }
 
-html {
-  background-image: url("./images/welcomemap.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: #E3D8D8;
-}
-
 .introduction-container h2 {
   text-align: center;
 }
 
-/*Creates Brazil grid*/
-.brazil-container {
-  display: grid;
-  border: 1px solid black;
-  grid-template-columns: 20px auto 20px;
-  grid-template-rows: auto;
-  float: left;
-  width: 49.5%;
-  background-color: rgba(26, 27, 28, .9);
-  border-radius: 10px;
-}
 
-/*Creates US grid*/
-.united-states-container {
-  display: grid;
-  border: 1px solid black;
-  grid-template-columns: 20px auto 20px;
-  grid-template-rows: auto;
-  float: right;
-  width: 49.5%;
-  background-color: rgba(26, 27, 28, .9);
-  border-radius: 10px;
-}
 
 .united-states-container h1,
 .brazil-content h1 {
   text-align: center;
-}
-
-.brazil-container *,
-.united-states-container * {
-  grid-column-start: 2;
-  grid-column-end: 2;
 }
 
 .image {
