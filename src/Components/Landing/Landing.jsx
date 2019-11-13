@@ -11,7 +11,7 @@ import NewYork from "./images/buildings-city-city-view-597909.jpg";
 export default function LandingContent() {
     return (
         <React.Fragment>
-            <div className="introduction-container hero is-link">
+            <div className="introduction-container hero is-dark">
                 <h2 className="title hero-body">Welcome to NSAmericas! Where would you like to go?</h2>
             </div>
             <main className="tile is-ancestor section">
@@ -46,7 +46,7 @@ export default function LandingContent() {
                         </figcaption>
                     </figure>
                     <br />
-                    <h3>Quick Facts:</h3>
+                    <h3 className="subtitle">Quick Facts:</h3>
                     <ul>
                         <li>Brazil's currency is the Brazilian Real.</li>
                         <li>
@@ -74,7 +74,7 @@ export default function LandingContent() {
                         <figcaption>Arrail Do Cabo Brazillian Coast</figcaption>
                     </figure>
                     <br />
-                    <h3>Climate Information:</h3>
+                    <h3 className="subtitle">Climate Information:</h3>
                     <p>
                         With Brazil being such a large country, it's climate
                         varies considerably from north to south. That being
@@ -83,7 +83,7 @@ export default function LandingContent() {
                         rainfall year round.
                     </p>
                     <br />
-                    <h3>What to Wear:</h3>
+                    <h3 className="subtitle">What to Wear:</h3>
                     <p>
                         With Brazil's warm temperatures, you should definitely
                         bring light clothes, both in color and fabric. In
@@ -110,7 +110,7 @@ export default function LandingContent() {
                         <figcaption>Cachoeria Do Serrando Cliff</figcaption>
                     </figure>
                     <br />
-                    <h3>Places to Go:</h3>
+                    <h3 className="subtitle">Places to Go:</h3>
                     <br />
                     <ol>
                         <li>
@@ -151,7 +151,7 @@ export default function LandingContent() {
                         </p>
                     </ol>
                     <br />
-                    <h3>Media:</h3>
+                    <h3 className="subtitle">Media:</h3>
                     <iframe
                         className="brazilvid"
                         title="Introducing Brazil"
@@ -162,7 +162,7 @@ export default function LandingContent() {
                     />
                     <br />
                     <a href="#top">
-                        <button className="totop">Back to top</button>
+                        <button className="totop button">Back to top</button>
                     </a>
                 </div>
             </div>
@@ -197,7 +197,7 @@ export default function LandingContent() {
                         </figcaption>
                     </figure>
                     <br />
-                    <h3>Quick Facts:</h3>
+                    <h3 className="subtitle">Quick Facts:</h3>
                     <ul>
                         <li>The United States currency is the U.S. Dollar.</li>
                         <li>
@@ -226,7 +226,7 @@ export default function LandingContent() {
                         <figcaption>Sandy Beach - Key West</figcaption>
                     </figure>
                     <br />
-                    <h3>Climate Information:</h3>
+                    <h3 className="subtitle">Climate Information:</h3>
                     <p>
                         Considering the size of the US, it's no surprise that
                         it's home to a wide range of climates depending on where
@@ -237,7 +237,7 @@ export default function LandingContent() {
                         climate.
                     </p>
                     <br />
-                    <h3>What to Wear:</h3>
+                    <h3 className="subtitle">What to Wear:</h3>
                     <p>
                         You may actually want to bring a wide variety of
                         clothing to tour across America. Generally, in the
@@ -306,7 +306,7 @@ export default function LandingContent() {
                         </p>
                     </ol>
                     <br />
-                    <h3>Media:</h3>
+                    <h3 className="subtitle">Media:</h3>
                     <iframe
                         className="usvid"
                         src="https://www.youtube.com/embed/98H5AN_vfOY"
@@ -317,7 +317,7 @@ export default function LandingContent() {
                     ></iframe>
                     <br />
                     <a href="#top">
-                        <button className="totop">Back to top</button>
+                        <button className="totop button">Back to top</button>
                     </a>
                 </div>
             </div>

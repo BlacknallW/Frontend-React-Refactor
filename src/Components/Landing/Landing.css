@@ -10,7 +10,10 @@
   text-align: center;
 }
 
-
+.brazil-content, .united-states-content{
+  background-color: rgba(74, 87, 107, .4);
+  color: white
+}
 
 .united-states-container h1,
 .brazil-content h1 {
@@ -42,6 +45,13 @@ li {
 figcaption {
   text-align: center;
   font-size: 14px;
+}
+
+main {
+  background-image: url("./images/welcomemap.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 740px) {
@@ -91,5 +101,13 @@ a {
 a:hover {
   color: whitesmoke;
   text-decoration: underline;
+  font-size: 18px;
+}
+
+.title, .subtitle {
+  color:white
+}
+
+p, li {
   font-size: 18px;
 }
