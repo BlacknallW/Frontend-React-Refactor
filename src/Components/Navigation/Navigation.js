@@ -7,7 +7,7 @@ import "./Navigation.css";
 const Navigation = () => {
 	return (
 		<>
-			<div>
+			<div className="box" id="box">
 				<WeatherBox />
 				<InfoBox />
 				<CurrencyBox />

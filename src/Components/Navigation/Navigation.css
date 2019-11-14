@@ -3,11 +3,7 @@
     padding: 0;
 }
 
-.info-box {
+#box {
     display: grid;
-    grid-template-columns: 350px;
-    grid-template-rows: 250px 250px 250px;
-    float:right;
-    border: 1px solid black;
-    background-color: #1a1e21;
+    float: right;
 }

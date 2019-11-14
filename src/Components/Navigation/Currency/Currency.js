@@ -7,7 +7,7 @@ class CurrencyBox extends React.Component {
 		return (
 			<>
 				<div className="currency-box">
-					<form className="form-box form" id="currencyForm">
+					<form className="form-box field is-grouped-multiline" id="currencyForm">
 						<div class="trip-box control">
 							<label class="travelers label">Guests:</label>
 							<input
@@ -33,7 +33,7 @@ class CurrencyBox extends React.Component {
 								id="nightsNumber"
 							/>
 						</div>
-						<div class="currency-input-column">
+						<div class="currency-input-column control">
 							<label className="label">User Currency:</label>
 							<input
 								list="currencyInput"
@@ -81,68 +81,39 @@ class CurrencyBox extends React.Component {
 						<input
 							type="submit"
 							value="Calculate"
-							className="calculate input"
+							className="calculate input button is-dark"
 						/>
-						<label class="description label">Description</label>
-						<label className="avg-cost label">Avg Cost USD</label>
-						<label className="cost-tab label" id="costTab"></label>
-						<div className="hotel">
-							<label for="hotel" className="hotel-name label">
-								Hotel
-							</label>
-						</div>
-						<div className="food">
-							<label for="food" className="food-name label">
-								Food
-							</label>
-						</div>
-						<div className="entertainment">
-							<label
-								for="entertainment"
-								className="entertainment-name label"
-							>
-								Entertainment
-							</label>
-						</div>
-						<div className="transportation">
-							<label
-								for="transportation"
-								className="transportation-name label"
-							>
-								Transportation
-							</label>
-						</div>
-						<label class="hotel-us-cost" id="hotelUsCost">
-							$150
-						</label>
-						<label class="food-us-cost" id="foodUsCost">
-							$82
-						</label>
-						<label
-							class="entertainment-us-cost"
-							id="entertainmentUsCost"
-						>
-							$150
-						</label>
-						<label
-							class="transportation-us-cost"
-							id="transportationUsCost"
-						>
-							$1060
-						</label>
-						<label
-							class="hotel-user-cost"
-							id="hotelUserCost"
-						></label>
-						<label class="food-user-cost" id="foodUserCost"></label>
-						<label
-							class="entertainment-user-cost"
-							id="entertainmentUserCost"
-						></label>
-						<label
-							class="transportation-user-cost"
-							id="transportationUserCost"
-						></label>
+                        <table className="table is-bordered is-hoverable is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Avg Cost USD</th>
+                                    <th>Avg Cost </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hotel</td>
+                                    <td>$150</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Food</td>
+                                    <td>$82</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Entertainment</td>
+                                    <td>$150</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Transportation</td>
+                                    <td>$1060</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
 					</form>
 				</div>
 			</>
