@@ -8,6 +8,7 @@ import BayBridge from "./images/bay-bridge-connection-2872915.jpg";
 import KeyWest from "./images/atlantic-ocean-beach-blue-sky-2785216.jpg";
 import NewYork from "./images/buildings-city-city-view-597909.jpg";
 
+
 export default function LandingContent() {
     return (
         <React.Fragment>
@@ -18,9 +19,7 @@ export default function LandingContent() {
             <div className="brazil-container section tile is-parent">
                 <div className="brazil-content box tile is-child">
                     <img src={BrazilFlag} className="image" alt="Brazil Flag" />
-                    <a href="Brazil.html">
                         <h1 className="title">Brazil</h1>
-                    </a>
                     <p>
                         With its fun and festive vibe, Brazil has much to see
                         and much more to do. Visit the booming tourism hubs of
@@ -169,9 +168,7 @@ export default function LandingContent() {
             <div className="united-states-container tile is-parent">
                 <div className="united-states-content tile is-child box">
                     <img src={USFlag} className="image" alt="US Flag" />
-                    <a href="US.html">
                         <h1 className="title">The United States</h1>
-                    </a>
                     <p>
                         Land of the Free and Home of the Brave, the United
                         States is home to a whole host of must-see tourism
