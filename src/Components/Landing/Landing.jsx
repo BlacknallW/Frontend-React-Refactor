@@ -15,7 +15,7 @@ export default function LandingContent() {
             <div className="introduction-container hero is-dark">
                 <h2 className="title hero-body">Welcome to NSAmericas! Where would you like to go?</h2>
             </div>
-            <main className="tile is-ancestor section landing-background">
+            <main className="tile is-ancestor section   landing-background">
             <div className="brazil-container section tile is-parent">
                 <div className="brazil-content box tile is-child">
                     <img src={BrazilFlag} className="image" alt="Brazil Flag" />
