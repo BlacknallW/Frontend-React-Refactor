@@ -8,19 +8,18 @@ class CurrencyBox extends React.Component {
 			<>
 				<div className="currency-box">
 					<form className="form-box field is-grouped-multiline" id="currencyForm">
-						<div class="trip-box control">
-							<label class="travelers label">Guests:</label>
+						<div className="trip-box control">
+							<label className="travelers label">Guests:</label>
 							<input
 								type="number"
 								step="1"
 								value="1"
 								min="1"
-								class="traveler-number"
+								className="traveler-number input"
 								id="travelerNumber"
-								className="input"
 							/>
 							<label
-								class="nights label"
+								className="nights label"
 							>
 								Nights:
 							</label>
@@ -33,7 +32,7 @@ class CurrencyBox extends React.Component {
 								id="nightsNumber"
 							/>
 						</div>
-						<div class="currency-input-column control">
+						<div className="currency-input-column control">
 							<label className="label">User Currency:</label>
 							<input
 								list="currencyInput"

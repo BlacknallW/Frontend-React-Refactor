@@ -7,7 +7,7 @@ export default class US extends React.Component {
 		return (
 			<>
 				<Navigation />
-				<USContent />
+				<USContent onClick={this.props.location} />
 			</>
 		);
 	}

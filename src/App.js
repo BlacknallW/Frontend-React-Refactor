@@ -6,24 +6,40 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Brazil from "./Components/Brazil/Brazil.js";
 import US from "./Components/US/US.js";
 import NSAmericasLogo from "./NSAmericas-logo-200x200.png";
+import weatherapi from "./API/weatherapi";
 
 class App extends React.Component {
+	state = {
+		city: null
+	};
+
+	componentDidMount = async location => {
+		const res = await weatherapi.get("/forecast", {
+			params: {
+				q: "Atlanta",
+				units: "imperial",
+				APPID: "d5bfe8a65a2dce437fd2e6c635989395"
+			}
+		});
+		console.log(res.data);
+	};
+
 	render() {
 		return (
 			<>
 				<Router>
 					<nav
-						class="navbar"
+						className="navbar"
 						role="navigation"
 						aria-label="main navigation"
 					>
-						<div class="navbar-brand">
-							<div class="navbar-item">
+						<div className="navbar-brand">
+							<div className="navbar-item">
 								<img src={NSAmericasLogo} alt="Logo" />
 							</div>
 							<a
 								role="button"
-								class="navbar-burger burger"
+								className="navbar-burger burger"
 								aria-label="menu"
 								aria-expanded="false"
 								data-target="navbarBasicExample"
@@ -33,16 +49,16 @@ class App extends React.Component {
 								<span aria-hidden="true"></span>
 							</a>
 						</div>
-						<div id="navbarBasicExample" class="navbar-menu">
-							<div class="navbar-start">
+						<div id="navbarBasicExample" className="navbar-menu">
+							<div className="navbar-start">
 								<Link to="/">
-									<a class="navbar-item">Home</a>
+									<a className="navbar-item">Home</a>
 								</Link>
 								<Link to="/brazil">
-									<a class="navbar-item">Brazil</a>
+									<a className="navbar-item">Brazil</a>
 								</Link>
 								<Link to="/us">
-									<a class="navbar-item">US</a>
+									<a className="navbar-item">US</a>
 								</Link>
 							</div>
 						</div>
@@ -55,7 +71,7 @@ class App extends React.Component {
 							<Brazil />
 						</Route>
 						<Route path="/us">
-							<US />
+							<US onClick={this.location} />
 						</Route>
 					</Switch>
 				</Router>

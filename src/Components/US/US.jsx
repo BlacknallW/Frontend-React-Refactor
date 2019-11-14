@@ -49,7 +49,7 @@ export default function USContent() {
 							Posts
 						</a>
 					</li>
-					<li class="search-box">
+					<li className="search-box">
 						<form
 							action="https://www.google.com/search"
 							autocomplete="off"
@@ -83,10 +83,10 @@ export default function USContent() {
 										alt="Florida"
 										className="imagecontent"
 									/>
-									<figcaption class="subtitle">Florida</figcaption>
+									<figcaption className="subtitle">Florida</figcaption>
 								</figure>
 							</div>
-							<div class="tile is-child">
+							<div className="tile is-child">
 								<figure>
 									<img
 										id="NewYork"
@@ -94,14 +94,14 @@ export default function USContent() {
 										alt="New York"
 										className="imagecontent"
 									/>
-									<figcaption class="subtitle">New York</figcaption>
+									<figcaption className="subtitle">New York</figcaption>
 								</figure>
 							</div>
 						</div>
 					</div>
-					<div class="tile is-ancestor">
-						<div class="tile is-parent">
-							<div class="tile is-child">
+					<div className="tile is-ancestor">
+						<div className="tile is-parent">
+							<div className="tile is-child">
 								<figure>
 									<img
 										className="imagecontent"
@@ -112,7 +112,7 @@ export default function USContent() {
 									<figcaption className="subtitle">Los Angeles</figcaption>
 								</figure>
 							</div>
-							<div class="tile is-child">
+							<div className="tile is-child">
 								<figure>
 									<img
 										className="imagecontent"
@@ -125,9 +125,9 @@ export default function USContent() {
 							</div>
 						</div>
 					</div>
-					<div class="tile is-ancestor">
-						<div class="tile is-parent">
-							<div class="tile is-child">
+					<div className="tile is-ancestor">
+						<div className="tile is-parent">
+							<div className="tile is-child">
 								<figure>
 									<img
 										className="imagecontent"
@@ -138,7 +138,7 @@ export default function USContent() {
 									<figcaption className="subtitle">Washington D.C.</figcaption>
 								</figure>
 							</div>
-							<div class="tile is-child">
+							<div className="tile is-child">
 								<figure>
 									<img
 										className="imagecontent"
@@ -151,9 +151,9 @@ export default function USContent() {
 							</div>
 						</div>
 					</div>
-					<div class="tile is-ancestor">
-						<div class="tile is-parent">
-							<div class="tile is-child">
+					<div className="tile is-ancestor">
+						<div className="tile is-parent">
+							<div className="tile is-child">
 								<figure>
 									<img
 										className="imagecontent"
@@ -164,7 +164,7 @@ export default function USContent() {
 									<figcaption className="subtitle">Las Vegas</figcaption>
 								</figure>
 							</div>
-							<div class="tile is-child">
+							<div className="tile is-child">
 								<figure>
 									<img
 										className="imagecontent"

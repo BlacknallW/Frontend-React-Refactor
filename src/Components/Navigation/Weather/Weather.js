@@ -10,7 +10,7 @@ class WeatherBox extends React.Component {
 	render() {
 		return (
 			<>
-				<div class="weather-box" id="weatherBox">
+				<div className="weather-box" id="weatherBox">
 					<table className="table is-bordered is-hoverable">
 							<tr>
 								<td className="has-text-centered" Span="4" >City Name</td>
