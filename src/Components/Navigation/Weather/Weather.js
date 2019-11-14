@@ -1,7 +1,8 @@
 import React from "react";
 import Axios from "axios";
+import "./Weather.css"
 
-class Weather extends React.Component {
+class WeatherBox extends React.Component {
     state = {
         Today: null
     }
@@ -31,4 +32,4 @@ class Weather extends React.Component {
     }   
 }
 
-export default Weather;
+export default WeatherBox;

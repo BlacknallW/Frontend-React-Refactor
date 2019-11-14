@@ -1,0 +1,87 @@
+.categories {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.categories {
+  grid-template-columns: 256px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  display: grid;
+  justify-self: center;
+}
+.link-list {
+  padding-inline-start: 0.5px;
+}
+.home {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  text-align: center;
+  list-style: none;
+  width: 250px;
+  background-color: lightcoral;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.attractions {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  text-align: center;
+  list-style: none;
+  width: 250px;
+  text-decoration: none;
+  background-color: gray;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.adventures {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  text-align: center;
+  list-style: none;
+  width: 250px;
+  text-decoration: none;
+  background-color: gray;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.shop {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  text-align: center;
+  list-style: none;
+  width: 250px;
+  background-color: gray;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.restaurant {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  text-align: center;
+  list-style: none;
+  width: 250px;
+  background-color: gray;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.stay {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  text-align: center;
+  list-style: none;
+  width: 250px;
+  background-color: gray;
+  border: 1px solid black;
+  font-size: 16px;
+}

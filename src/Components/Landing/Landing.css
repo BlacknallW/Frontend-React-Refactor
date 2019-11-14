@@ -47,7 +47,7 @@ figcaption {
   font-size: 14px;
 }
 
-main {
+.landing-background {
   background-image: url("./images/welcomemap.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;

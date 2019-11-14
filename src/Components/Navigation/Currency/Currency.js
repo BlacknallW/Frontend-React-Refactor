@@ -1,7 +1,8 @@
 import React from "react";
 import Axios from "axios";
+import "./Currency.css"
 
-class Currency extends React.Component {
+class CurrencyBox extends React.Component {
     render() {
         return (<>
             <div class="currency-box">
@@ -83,4 +84,4 @@ class Currency extends React.Component {
     }
 }
 
-export default Currency;
+export default CurrencyBox;
