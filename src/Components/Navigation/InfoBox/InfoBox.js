@@ -6,9 +6,10 @@ class InfoBox extends React.Component {
 		return (
 			<>
 				<div className="categories list is-hoverable">
-					<p 
-					className="list-item is-active has-text-centered" 
-					id="city">
+					<p
+						className="list-item is-active has-text-centered"
+						id="city"
+					>
 						Home
 					</p>
 					<a
