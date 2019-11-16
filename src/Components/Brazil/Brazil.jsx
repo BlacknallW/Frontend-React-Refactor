@@ -8,7 +8,7 @@ import FozDoIguacu from "./images/foz-iguazufalls.jpg";
 export default function BrazilContent() {
 	return (
 		<React.Fragment>
-			<nav>
+			<nav className="breadcrumb is-centered" aria-label="breadcrumbs">
 				<ul className="nav">
 					<li>
 						<a href="index.html">Home</a>
@@ -62,45 +62,87 @@ export default function BrazilContent() {
 					</li>
 				</ul>
 			</nav>
-			<div className="flexbox">
-				<main className="grid">
-					<div className="image1" id="Rio de Janerio">
-						<img
-							className="image1img"
-							src={RioRedeemer}
-							alt="Rio De Janerio"
-						/>
+			<div className="tile is-ancestor ">
+				<div className="tile is-parent">
+					<div className="tile is-child">
+						<figure>
+							<img
+								className="image1img"
+								src={RioRedeemer}
+								alt="Rio De Janerio"
+								id="Rio de Janerio"
+							/>
+						</figure>
 					</div>
-					<div className="image2" id="Rio De Janerio">
-						<img
-							className="image2"
-							src={RioEscalera}
-							alt="Rio De Janerio"
-						/>
+					<div className="tile is-child">
+						<figure>
+							<img
+								className="image2"
+								src={RioEscalera}
+								alt="Rio De Janerio"
+								id="Rio De Janerio"
+							/>
+						</figure>
 					</div>
-					<div className="image3" id="Bahia">
-						<img
-							className="image3"
-							src={BahiaSalvador}
-							alt="Bahia"
-						/>
+				</div>
+			</div>
+			<div className="tile is-ancestor">
+				<div className="tile is-parent">
+					<div className="tile is-child">
+						<figure>
+							<img
+								className="image3"
+								src={BahiaSalvador}
+								alt="Bahia"
+								id="Bahia"
+							/>
+						</figure>
 					</div>
-					<div className="image4" id="Bahia City">
-						<img
-							className="image4"
-							src={BahiaStreet}
-							alt="Bahia City"
-						/>
+					<div className="tile is-child">
+						<figure>
+							<img
+								className="image4"
+								src={BahiaStreet}
+								alt="Bahia City"
+								id="Bahia City"
+							/>
+						</figure>
 					</div>
-					<div className="image5" id="Foz do Iguacu">
+				</div>
+			</div>
+			<div className="tile is-ancestor">
+				<div className="tile is-parent">
+					<div className="tile is-child">
+						<figure>
 						<img
 							className="image5"
 							src={FozDoIguacu}
 							alt="Foz do Iguacu"
+							id="Foz do Iguacu"
 						/>
+						</figure>
 					</div>
-				</main>
+					<div className="tile is-child">
+						<figure>
+							<img />
+						</figure>
 					</div>
+				</div>
+			</div>
+			<div className="tile is-ancestor">
+				<div className="tile is-parent">
+					<div className="tile is-child">
+						<figure>
+							<img />
+						</figure>
+					</div>
+					<div className="tile is-child">
+						<figure>
+							<img />
+						</figure>
+					</div>
+				</div>
+			</div>
 		</React.Fragment>
 	);
 }
