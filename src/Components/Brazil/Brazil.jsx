@@ -4,15 +4,15 @@ import RioEscalera from "./images/Escalera coloridas-Selaron5-.jpeg";
 import BahiaSalvador from "./images/salvador-brazil-postcard.webp";
 import BahiaStreet from "./images/Bahia-street.jpg";
 import FozDoIguacu from "./images/foz-iguazufalls.jpg";
+import SaoPaulo from "./images/saopaulo.jpg"
+import Brasilia from "./images/brasilia.jpg"
+import Agronomica from "./images/agronomica.jpg"
 
 export default function BrazilContent() {
 	return (
 		<React.Fragment>
 			<nav className="breadcrumb is-centered" aria-label="breadcrumbs">
 				<ul className="nav">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
 					<li>
 						<a
 							href="https://www.lonelyplanet.com/brazil/rio-de-janeiro"
@@ -67,17 +67,18 @@ export default function BrazilContent() {
 					<div className="tile is-child">
 						<figure>
 							<img
-								className="image1img"
+								className="imagecontent"
 								src={RioRedeemer}
 								alt="Rio De Janerio"
 								id="Rio de Janerio"
 							/>
+							<figcaption>Rio De Janerio</figcaption>
 						</figure>
 					</div>
 					<div className="tile is-child">
 						<figure>
 							<img
-								className="image2"
+								className="imagecontent"
 								src={RioEscalera}
 								alt="Rio De Janerio"
 								id="Rio De Janerio"
@@ -91,21 +92,23 @@ export default function BrazilContent() {
 					<div className="tile is-child">
 						<figure>
 							<img
-								className="image3"
+								className="imagecontent"
 								src={BahiaSalvador}
 								alt="Bahia"
 								id="Bahia"
 							/>
+							<figcaption>Salvador</figcaption>
 						</figure>
 					</div>
 					<div className="tile is-child">
 						<figure>
 							<img
-								className="image4"
+								className="imagecontent"
 								src={BahiaStreet}
 								alt="Bahia City"
 								id="Bahia City"
 							/>
+							<figcaption>Bahia City</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -115,16 +118,23 @@ export default function BrazilContent() {
 					<div className="tile is-child">
 						<figure>
 						<img
-							className="image5"
+							className="imagecontent"
 							src={FozDoIguacu}
 							alt="Foz do Iguacu"
 							id="Foz do Iguacu"
 						/>
+						<figcaption>Foz do Iguacu</figcaption>
 						</figure>
 					</div>
 					<div className="tile is-child">
 						<figure>
-							<img />
+							<img
+							className="imagecontent"
+							src={SaoPaulo}
+							alt = "Sao Paulo"
+							id = "SaoPaulo"
+							/>
+							<figcaption>Sao Paulo</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -133,12 +143,24 @@ export default function BrazilContent() {
 				<div className="tile is-parent">
 					<div className="tile is-child">
 						<figure>
-							<img />
+							<img
+							className="imagecontent"
+							src={Brasilia}
+							alt = "Brasilia"
+							id = "Brasilia"
+							/>
+							<figcaption>Brasilia</figcaption>
 						</figure>
 					</div>
 					<div className="tile is-child">
 						<figure>
-							<img />
+							<img
+							className="imagecontent"
+							src={Agronomica}
+							alt="Agronomica"
+							id = "Agronomica"
+							/>
+							<figcaption>Agronomica</figcaption>
 						</figure>
 					</div>
 				</div>

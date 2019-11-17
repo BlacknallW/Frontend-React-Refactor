@@ -1,5 +1,4 @@
 import React from "react";
-import Axios from "axios";
 import "./Weather.css";
 
 class WeatherBox extends React.Component {
