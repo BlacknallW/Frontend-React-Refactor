@@ -17,6 +17,7 @@ class InfoBox extends React.Component {
 						target="_blank"
 						rel="noreferrer noopener"
 						className="list-item"
+						href="/"
 					>
 						Attractions
 					</a>
@@ -25,6 +26,7 @@ class InfoBox extends React.Component {
 						target="_blank"
 						rel="noreferrer noopener"
 						className="list-item"
+						href="/"
 					>
 						Adventures
 					</a>
@@ -33,6 +35,7 @@ class InfoBox extends React.Component {
 						target="_blank"
 						rel="noreferrer noopener"
 						className="list-item"
+						href="/"
 					>
 						Shopping
 					</a>
@@ -41,6 +44,7 @@ class InfoBox extends React.Component {
 						target="_blank"
 						rel="noreferrer noopener"
 						className="list-item"
+						href="/"
 					>
 						Restaurant
 					</a>
@@ -49,6 +53,7 @@ class InfoBox extends React.Component {
 						target="_blank"
 						rel="noreferrer noopener"
 						className="list-item"
+						href="/"
 					>
 						Accomodation
 					</a>

@@ -1,8 +1,22 @@
 import React from "react";
-import Axios from "axios";
 import "./Currency.css";
+import currencyexchange from "../../../API/currencyexchange"
 
 class CurrencyBox extends React.Component {
+	state = {
+		currency: "USD"
+	}
+
+	componentDidMount = async (currency) => {
+		const res = await currencyexchange.get("/latest", {
+			params: {
+				base: "USD",
+				symbols: this.state
+			}
+		})
+		console.log(res.data)
+	}
+
 	render() {
 		return (
 			<>
