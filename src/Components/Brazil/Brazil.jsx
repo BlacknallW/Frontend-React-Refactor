@@ -65,22 +65,20 @@ export default function BrazilContent() {
 			</nav>
 			<main className="brazil-background">
 				<div className="tile is-ancestor">
-					<div className="tile is-vertical is-8">
+					<div className="tile is-vertical is-8 section">
 						<div className="tile is-parent">
 							<article className="tile is-child">
-								<div className="content">
-									<figure>
-										<img
-											className="imagecontent"
-											src={Agronomica}
-											alt="Agronomica"
-											id="Agronomica"
-										/>
-										<figcaption className="subtitle">
-											Agronomica
-										</figcaption>
-									</figure>
-								</div>
+								<figure>
+									<img
+										className="imagecontent"
+										src={Agronomica}
+										alt="Agronomica"
+										id="Agronomica"
+									/>
+									<figcaption className="subtitle">
+										Agronomica
+									</figcaption>
+								</figure>
 							</article>
 							<article className="tile is-child">
 								<figure>
@@ -98,34 +96,30 @@ export default function BrazilContent() {
 						</div>
 						<div className="tile is-parent">
 							<article className="tile is-child">
-								<div className="content">
-									<figure>
-										<img
-											className="imagecontent"
-											src={Brasilia}
-											alt="Brasilia"
-											id="Brasilia"
-										/>
-										<figcaption className="subtitle">
-											Brasilia
-										</figcaption>
-									</figure>
-								</div>
+								<figure>
+									<img
+										className="imagecontent"
+										src={Brasilia}
+										alt="Brasilia"
+										id="Brasilia"
+									/>
+									<figcaption className="subtitle">
+										Brasilia
+									</figcaption>
+								</figure>
 							</article>
 							<article className="tile is-child">
-								<div className="content">
-									<figure>
-										<img
-											className="imagecontent"
-											src={FozDoIguacu}
-											alt="Foz do Iguacu"
-											id="Foz do Iguacu"
-										/>
-										<figcaption className="subtitle">
-											Foz do Iguacu
-										</figcaption>
-									</figure>
-								</div>
+								<figure>
+									<img
+										className="imagecontent"
+										src={FozDoIguacu}
+										alt="Foz do Iguacu"
+										id="Foz do Iguacu"
+									/>
+									<figcaption className="subtitle">
+										Foz do Iguacu
+									</figcaption>
+								</figure>
 							</article>
 						</div>
 						<div className="tile is-parent">
@@ -187,8 +181,8 @@ export default function BrazilContent() {
 					</div>
 					<div className="tile is-parent">
 						<article className="tile is-child">
-							<div className="content">
-								<Navigation location="Brazil" currency="BRL"/>
+							<div className="content section">
+								<Navigation location="Brazil" currency="BRL" />
 							</div>
 						</article>
 					</div>

@@ -6,24 +6,8 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Brazil from "./Components/Brazil/Brazil.js";
 import US from "./Components/US/US.js";
 import NSAmericasLogo from "./NSAmericas-logo-200x200.png";
-import weatherapi from "./API/weatherapi";
 
 class App extends React.Component {
-	state = {
-		city: null
-	};
-
-	componentDidMount = async location => {
-		const res = await weatherapi.get("/forecast", {
-			params: {
-				q: "Atlanta",
-				units: "imperial",
-				APPID: "d5bfe8a65a2dce437fd2e6c635989395"
-			}
-		});
-		console.log(res.data);
-	};
-
 	render() {
 		return (
 			<>

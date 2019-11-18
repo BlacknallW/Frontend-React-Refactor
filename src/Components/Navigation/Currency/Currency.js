@@ -19,7 +19,7 @@ class CurrencyBox extends React.Component {
 
 	onCurrencySubmit = e => {
 		e.preventDefault();
-	}
+	};
 
 	render() {
 		return (
@@ -103,7 +103,12 @@ class CurrencyBox extends React.Component {
 								<tr>
 									<th>Description</th>
 									<th>Avg Cost {this.props.currency}</th>
-		<th>Avg Cost {document.getElementById('currencyInput')}</th>
+									<th>
+										Avg Cost{" "}
+										{document.getElementById(
+											"currencyInput"
+										)}
+									</th>
 								</tr>
 							</thead>
 							<tbody>

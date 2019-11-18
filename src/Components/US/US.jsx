@@ -7,6 +7,7 @@ import WashingtonDC from "./images/WashingtonDC.jpg";
 import NewYork from "./images/newyork.jpg";
 import SanDiego from "./images/sandiego.jpg";
 import LasVegas from "./images/lasvegas.jpg";
+import Navigation from "../Navigation/Navigation"
 
 export default function USContent() {
 	return (
@@ -72,8 +73,8 @@ export default function USContent() {
 			</nav>
 
 			<main className="body-content us-background">
-				<div className="main-content">
-					<div className="tile is-ancestor">
+				<div className="tile is-ancestor">
+					<div className="tile is-vertical is-8 section">
 						<div className="tile is-parent">
 							<div className="tile is-child">
 								<figure>
@@ -98,7 +99,7 @@ export default function USContent() {
 								</figure>
 							</div>
 						</div>
-					</div>
+					
 					<div className="tile is-ancestor">
 						<div className="tile is-parent">
 							<div className="tile is-child">
@@ -176,6 +177,14 @@ export default function USContent() {
 								</figure>
 							</div>
 						</div>
+					</div>
+					</div>
+					<div className="tile is-parent">
+						<article className="tile is-child">
+							<div className="content section">
+								<Navigation location="US" currency="USD"/>
+							</div>
+						</article>
 					</div>
 				</div>
 			</main>
