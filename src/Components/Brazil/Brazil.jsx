@@ -62,6 +62,7 @@ export default function BrazilContent() {
 					</li>
 				</ul>
 			</nav>
+			<main className="brazil-background">
 			<div className="tile is-ancestor ">
 				<div className="tile is-parent">
 					<div className="tile is-child">
@@ -72,7 +73,7 @@ export default function BrazilContent() {
 								alt="Rio De Janerio"
 								id="Rio de Janerio"
 							/>
-							<figcaption>Rio De Janerio</figcaption>
+							<figcaption className="subtitle">Rio De Janerio</figcaption>
 						</figure>
 					</div>
 					<div className="tile is-child">
@@ -97,7 +98,7 @@ export default function BrazilContent() {
 								alt="Bahia"
 								id="Bahia"
 							/>
-							<figcaption>Salvador</figcaption>
+							<figcaption className="subtitle">Salvador</figcaption>
 						</figure>
 					</div>
 					<div className="tile is-child">
@@ -108,7 +109,7 @@ export default function BrazilContent() {
 								alt="Bahia City"
 								id="Bahia City"
 							/>
-							<figcaption>Bahia City</figcaption>
+							<figcaption className="subtitle">Bahia City</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -123,7 +124,7 @@ export default function BrazilContent() {
 							alt="Foz do Iguacu"
 							id="Foz do Iguacu"
 						/>
-						<figcaption>Foz do Iguacu</figcaption>
+						<figcaption className="subtitle">Foz do Iguacu</figcaption>
 						</figure>
 					</div>
 					<div className="tile is-child">
@@ -134,7 +135,7 @@ export default function BrazilContent() {
 							alt = "Sao Paulo"
 							id = "SaoPaulo"
 							/>
-							<figcaption>Sao Paulo</figcaption>
+							<figcaption className="subtitle">Sao Paulo</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -149,7 +150,7 @@ export default function BrazilContent() {
 							alt = "Brasilia"
 							id = "Brasilia"
 							/>
-							<figcaption>Brasilia</figcaption>
+							<figcaption className="subtitle">Brasilia</figcaption>
 						</figure>
 					</div>
 					<div className="tile is-child">
@@ -160,11 +161,12 @@ export default function BrazilContent() {
 							alt="Agronomica"
 							id = "Agronomica"
 							/>
-							<figcaption>Agronomica</figcaption>
+							<figcaption className="subtitle">Agronomica</figcaption>
 						</figure>
 					</div>
 				</div>
 			</div>
+			</main>
 		</React.Fragment>
 	);
 }
