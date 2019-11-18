@@ -64,11 +64,11 @@ export default function BrazilContent() {
 				</ul>
 			</nav>
 			<main className="brazil-background">
-				<div class="tile is-ancestor">
-					<div class="tile is-vertical is-8">
-						<div class="tile is-parent">
-							<article class="tile is-child">
-								<div class="content">
+				<div className="tile is-ancestor">
+					<div className="tile is-vertical is-8">
+						<div className="tile is-parent">
+							<article className="tile is-child">
+								<div className="content">
 									<figure>
 										<img
 											className="imagecontent"
@@ -114,78 +114,80 @@ export default function BrazilContent() {
 							</article>
 							<article className="tile is-child">
 								<div className="content">
-								<figure>
-									<img
-										className="imagecontent"
-										src={FozDoIguacu}
-										alt="Foz do Iguacu"
-										id="Foz do Iguacu"
-									/>
-									<figcaption className="subtitle">
-										Foz do Iguacu
-									</figcaption>
-								</figure>
+									<figure>
+										<img
+											className="imagecontent"
+											src={FozDoIguacu}
+											alt="Foz do Iguacu"
+											id="Foz do Iguacu"
+										/>
+										<figcaption className="subtitle">
+											Foz do Iguacu
+										</figcaption>
+									</figure>
 								</div>
 							</article>
 						</div>
 						<div className="tile is-parent">
 							<article className="tile is-child">
 								<figure>
-								<img
-									className="imagecontent"
-									src={RioRedeemer}
-									alt="Rio De Janerio"
-									id="Rio de Janerio"
-								/>
-								<figcaption className="subtitle">
-									Rio De Janerio
-								</figcaption>
-							</figure>
+									<img
+										className="imagecontent"
+										src={RioRedeemer}
+										alt="Rio De Janerio"
+										id="Rio de Janerio"
+									/>
+									<figcaption className="subtitle">
+										Rio De Janerio
+									</figcaption>
+								</figure>
 							</article>
 							<article className="tile is-child">
 								<figure>
-								<img
-									className="imagecontent"
-									src={Centro}
-									alt="Centro"
-									id="Centro"
-								/>
-								<figcaption className="subtitle">Centro</figcaption>
-							</figure>
+									<img
+										className="imagecontent"
+										src={Centro}
+										alt="Centro"
+										id="Centro"
+									/>
+									<figcaption className="subtitle">
+										Centro
+									</figcaption>
+								</figure>
 							</article>
 						</div>
 						<div className="tile is-parent">
 							<article className="tile is-child">
 								<figure>
-								<img
-									className="imagecontent"
-									src={BahiaSalvador}
-									alt="Bahia"
-									id="Bahia"
-								/>
-								<figcaption className="subtitle">
-									Salvador
-								</figcaption>
-							</figure>
+									<img
+										className="imagecontent"
+										src={BahiaSalvador}
+										alt="Bahia"
+										id="Bahia"
+									/>
+									<figcaption className="subtitle">
+										Salvador
+									</figcaption>
+								</figure>
 							</article>
 							<article className="tile is-child">
 								<figure>
-								<img
-									className="imagecontent"
-									src={BahiaStreet}
-									alt="Bahia City"
-									id="Bahia City"
-								/>
-								<figcaption className="subtitle">
-									Bahia City
-								</figcaption>
-							</figure>
+									<img
+										className="imagecontent"
+										src={BahiaStreet}
+										alt="Bahia City"
+										id="Bahia City"
+									/>
+									<figcaption className="subtitle">
+										Bahia City
+									</figcaption>
+								</figure>
 							</article>
 						</div>
 					</div>
-					<div class="tile is-parent">
-						<article class="tile is-child">
-							<div class="content">
+					<div className="tile is-parent">
+						<article className="tile is-child">
+							<div className="content">
 								<Navigation />
 							</div>
 						</article>

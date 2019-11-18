@@ -11,7 +11,7 @@ class CurrencyBox extends React.Component {
 		const res = await currencyexchange.get("/latest", {
 			params: {
 				base: "USD",
-				symbols: this.state
+				symbols: this.state.currency
 			}
 		})
 		console.log(res.data)
@@ -27,7 +27,6 @@ class CurrencyBox extends React.Component {
 							<input
 								type="number"
 								step="1"
-								value="1"
 								min="1"
 								className="traveler-number input"
 								id="travelerNumber"
@@ -41,7 +40,6 @@ class CurrencyBox extends React.Component {
 								type="number"
 								step="1"
 								className="nights-number input"
-								value="1"
 								min="1"
 								id="nightsNumber"
 							/>

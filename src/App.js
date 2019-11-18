@@ -52,13 +52,13 @@ class App extends React.Component {
 						<div id="navbarBasicExample" className="navbar-menu">
 							<div className="navbar-start">
 								<Link to="/">
-									<a className="navbar-item">Home</a>
+									<p className="navbar-item">Home</p>
 								</Link>
 								<Link to="/brazil">
-									<a className="navbar-item">Brazil</a>
+									<p className="navbar-item">Brazil</p>
 								</Link>
 								<Link to="/us">
-									<a className="navbar-item">US</a>
+									<p className="navbar-item">US</p>
 								</Link>
 							</div>
 						</div>
@@ -71,7 +71,7 @@ class App extends React.Component {
 							<Brazil />
 						</Route>
 						<Route path="/us">
-							<US onClick={this.location} />
+							<US />
 						</Route>
 					</Switch>
 				</Router>
