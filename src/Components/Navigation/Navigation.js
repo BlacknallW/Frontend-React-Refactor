@@ -4,13 +4,13 @@ import InfoBox from "./InfoBox/InfoBox";
 import WeatherBox from "./Weather/Weather";
 import "./Navigation.css";
 
-const Navigation = () => {
+const Navigation = (props) => {
 	return (
 		<>
 			<div className="box" id="box">
 				<WeatherBox />
 				<InfoBox />
-				<CurrencyBox />
+				<CurrencyBox currency={props.currency}/>
 			</div>
 		</>
 	);

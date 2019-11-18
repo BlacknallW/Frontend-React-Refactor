@@ -188,7 +188,7 @@ export default function BrazilContent() {
 					<div className="tile is-parent">
 						<article className="tile is-child">
 							<div className="content">
-								<Navigation />
+								<Navigation location="Brazil" currency="BRL"/>
 							</div>
 						</article>
 					</div>

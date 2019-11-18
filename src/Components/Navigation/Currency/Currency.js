@@ -1,27 +1,34 @@
 import React from "react";
 import "./Currency.css";
-import currencyexchange from "../../../API/currencyexchange"
+import currencyexchange from "../../../API/currencyexchange";
 
 class CurrencyBox extends React.Component {
 	state = {
-		currency: "USD"
-	}
+		currency: this.props.currency
+	};
 
-	componentDidMount = async (currency) => {
+	componentDidMount = async currency => {
 		const res = await currencyexchange.get("/latest", {
 			params: {
 				base: "USD",
 				symbols: this.state.currency
 			}
-		})
-		console.log(res.data)
+		});
+		console.log(res.data.rates);
+	};
+
+	onCurrencySubmit = e => {
+		e.preventDefault();
 	}
 
 	render() {
 		return (
 			<>
 				<div className="currency-box">
-					<form className="form-box field is-grouped-multiline" id="currencyForm">
+					<form
+						className="form-box field is-grouped-multiline"
+						id="currencyForm"
+					>
 						<div className="trip-box control">
 							<label className="travelers label">Guests:</label>
 							<input
@@ -31,11 +38,7 @@ class CurrencyBox extends React.Component {
 								className="traveler-number input"
 								id="travelerNumber"
 							/>
-							<label
-								className="nights label"
-							>
-								Nights:
-							</label>
+							<label className="nights label">Nights:</label>
 							<input
 								type="number"
 								step="1"
@@ -93,38 +96,39 @@ class CurrencyBox extends React.Component {
 							type="submit"
 							value="Calculate"
 							className="calculate input button is-dark"
+							onClick={this.onCurrencySubmit}
 						/>
-                        <table className="table is-bordered is-hoverable is-fullwidth">
-                            <thead>
-                                <tr>
-                                    <th>Description</th>
-                                    <th>Avg Cost USD</th>
-                                    <th>Avg Cost </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Hotel</td>
-                                    <td>$150</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Food</td>
-                                    <td>$82</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Entertainment</td>
-                                    <td>$150</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Transportation</td>
-                                    <td>$1060</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
+						<table className="table is-bordered is-hoverable is-fullwidth">
+							<thead>
+								<tr>
+									<th>Description</th>
+									<th>Avg Cost {this.props.currency}</th>
+		<th>Avg Cost {document.getElementById('currencyInput')}</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Hotel</td>
+									<td>$150</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Food</td>
+									<td>$82</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Entertainment</td>
+									<td>$150</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Transportation</td>
+									<td>$1060</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</form>
 				</div>
 			</>
