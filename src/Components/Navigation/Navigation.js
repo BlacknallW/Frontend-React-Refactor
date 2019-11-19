@@ -4,16 +4,28 @@ import InfoBox from "./InfoBox/InfoBox";
 import WeatherBox from "./Weather/Weather";
 import "./Navigation.css";
 
-const Navigation = (props) => {
-	return (
-		<>
-			<div className="box" id="box">
-				<WeatherBox location={props.location} />
-				<InfoBox />
-				<CurrencyBox currency={props.currency}/>
-			</div>
-		</>
-	);
-};
+class Navigation extends React.Component {
+	state = {
+		location: "Baltimore"
+	}
+
+	componentDidMount = () => {
+		this.setState({location: this.props.location})
+	}
+
+
+	render() {
+		console.log(this.state)
+		return (
+			<>
+				<div className="box" id="box">
+					<WeatherBox location={this.state.location} />
+					<InfoBox />
+					<CurrencyBox currency={this.props.currency} />
+				</div>
+			</>
+		);
+	}
+}
 
 export default Navigation;

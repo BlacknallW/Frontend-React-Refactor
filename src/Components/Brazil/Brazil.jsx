@@ -18,6 +18,9 @@ export default class BrazilContent extends React.Component {
 		e.preventDefault()
 		console.log("Tony Robbins hungry")
 
+		this.setState({
+			location: "Atlanta"
+		})
 	}
 
 	render() {

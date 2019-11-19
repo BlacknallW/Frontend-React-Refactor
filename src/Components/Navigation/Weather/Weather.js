@@ -21,7 +21,7 @@ class WeatherBox extends React.Component {
 		fifthDayName: null
 	};
 
-	renderWeatherData = async location => {
+	componentDidMount = async location => {
 		location = this.props.location
 		const res = await weatherapi.get("/forecast", {
 			params: {
@@ -31,6 +31,7 @@ class WeatherBox extends React.Component {
 			}
 		});
 
+		console.log(this.props.location)
 		//Gets the current temperature
 		const currentDayTemp = Math.round(res.data.list[0].main.temp);
 		//Gets the current sky conditions
