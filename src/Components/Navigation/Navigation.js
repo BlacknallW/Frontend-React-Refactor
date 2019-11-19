@@ -8,7 +8,7 @@ const Navigation = (props) => {
 	return (
 		<>
 			<div className="box" id="box">
-				<WeatherBox />
+				<WeatherBox location={props.location} />
 				<InfoBox />
 				<CurrencyBox currency={props.currency}/>
 			</div>

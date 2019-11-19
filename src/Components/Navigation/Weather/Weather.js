@@ -21,10 +21,11 @@ class WeatherBox extends React.Component {
 		fifthDayName: null
 	};
 
-	componentDidMount = async location => {
+	renderWeatherData = async location => {
+		location = this.props.location
 		const res = await weatherapi.get("/forecast", {
 			params: {
-				q: "Atlanta",
+				q: this.props.location,
 				units: "imperial",
 				APPID: "d5bfe8a65a2dce437fd2e6c635989395"
 			}
@@ -73,7 +74,7 @@ class WeatherBox extends React.Component {
 		let fifthDayName = dateToArray[0];
 
 		this.setState({
-			location: "Atlanta",
+			location: location,
 			currentTemp: currentDayTemp,
 			currentPrecip: currentDayPrecipitation,
 			currentHumid: currentDayHumidity,

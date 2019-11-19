@@ -4,7 +4,8 @@ import currencyexchange from "../../../API/currencyexchange";
 
 class CurrencyBox extends React.Component {
 	state = {
-		currency: this.props.currency
+		currency: this.props.currency,
+		userCurrency : null
 	};
 
 	componentDidMount = async currency => {
@@ -104,10 +105,7 @@ class CurrencyBox extends React.Component {
 									<th>Description</th>
 									<th>Avg Cost {this.props.currency}</th>
 									<th>
-										Avg Cost{" "}
-										{document.getElementById(
-											"currencyInput"
-										)}
+										Avg Cost
 									</th>
 								</tr>
 							</thead>
