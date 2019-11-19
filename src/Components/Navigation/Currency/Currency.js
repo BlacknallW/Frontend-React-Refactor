@@ -5,21 +5,56 @@ import currencyexchange from "../../../API/currencyexchange";
 class CurrencyBox extends React.Component {
 	state = {
 		currency: this.props.currency,
-		userCurrency : null
+		userCurrency : "USD",
+		userHotelPrice: 0,
+		userFoodCost : 0,
+		userEntertainmentCost : 0,
+		userTransportationCost: 0
 	};
 
 	componentDidMount = async currency => {
 		const res = await currencyexchange.get("/latest", {
 			params: {
-				base: "USD",
-				symbols: this.state.currency
+				base: this.state.currency,
+				symbols: this.state.usercurrency
 			}
 		});
-		console.log(res.data.rates);
+		console.log(res.data.rates[this.state.userCurrency]);
+		//Pulling data from both the API for currency rate and the user-input from the HTML document for traveler number and nights.
+		const travelerNumber = document.querySelector("#travelerNumber").value
+		const nightsNumber = document.querySelector("#nightsNumber").value;
+		const travelerCurrency = res.data.rates[this.state.userCurrency];
+		console.log(travelerNumber)
+		console.log(nightsNumber)
+
+		//Calculating the cost of each category based on general average price statistics.
+		const usHotelPrice = 150 * (nightsNumber * travelerNumber);
+		const usFoodCost = 82 * (travelerNumber * nightsNumber);
+		const usEntertainmentCost =
+			150 * (travelerNumber * nightsNumber);
+		const usTransportationCost =
+			1000 + 60 * (travelerNumber * nightsNumber);
+		//Calculates the user cost in their native currency by multiplying it times USD
+		const userHotelPrice = `${(
+			usHotelPrice * travelerCurrency
+		).toFixed(2)}${this.state.userCurrency}`;
+		const userFoodCost = `${(usFoodCost * travelerCurrency).toFixed(
+			2
+		)}${this.state.userCurrency}`;
+		const userEntertainmentCost = `${(
+			usEntertainmentCost * travelerCurrency
+		).toFixed(2)}${this.state.userCurrency}`;
+		const userTransportationCost = `${(
+			usTransportationCost * travelerCurrency
+		).toFixed(2)}${this.state.userCurrency}`;
 	};
 
 	onCurrencySubmit = e => {
 		e.preventDefault();
+		this.setState({
+			userCurrency: document.querySelector("#userCurrency").value
+		})
+		console.log(this.state.userCurrency)
 	};
 
 	render() {
@@ -38,6 +73,7 @@ class CurrencyBox extends React.Component {
 								min="1"
 								className="traveler-number input"
 								id="travelerNumber"
+								defaultValue="1"
 							/>
 							<label className="nights label">Nights:</label>
 							<input
@@ -46,6 +82,7 @@ class CurrencyBox extends React.Component {
 								className="nights-number input"
 								min="1"
 								id="nightsNumber"
+								defaultValue="1"
 							/>
 						</div>
 						<div className="currency-input-column control">
@@ -105,7 +142,7 @@ class CurrencyBox extends React.Component {
 									<th>Description</th>
 									<th>Avg Cost {this.props.currency}</th>
 									<th>
-										Avg Cost
+										Avg Cost {this.state.userCurrency}
 									</th>
 								</tr>
 							</thead>
