@@ -42,10 +42,10 @@ class CurrencyBox extends React.Component {
 			nightsNumber: document.querySelector("#nightsNumber").value,
 			userCurrency: document.querySelector("#userCurrency").value
 		});
-		console.log(this.state.userCurrency);
 	};
 
 	onCurrencySubmit = e => {
+		e.preventDefault();
 		const travelerNumber = document.querySelector("#travelerNumber").value;
 		const nightsNumber = document.querySelector("#nightsNumber").value;
 		//Calculating the cost of each category based on general average price statistics.
@@ -57,25 +57,30 @@ class CurrencyBox extends React.Component {
 
 
 		//Brazil category costs
-		const BrazilHotelCost = 340 * (nightsNumber * travelerNumber)
-        const BrazilFoodCost = 56 * (travelerNumber * nightsNumber)
-        const BrazilEntertainmentCost = 50 * (travelerNumber * nightsNumber)
-		const BrazilTransportationCost = 4100 + (100 * (travelerNumber * nightsNumber))
+		const brazilHotelCost = 340 * (nightsNumber * travelerNumber)
+        const brazilFoodCost = 56 * (travelerNumber * nightsNumber)
+        const brazilEntertainmentCost = 50 * (travelerNumber * nightsNumber)
+		const brazilTransportationCost = 4100 + (100 * (travelerNumber * nightsNumber))
 		
 		//Calculates the user cost in their native currency by multiplying it times USD
-		const userHotelPrice = `${(
-			usHotelPrice * this.state.travelerCurrency
+		const userHotelPrice = `${((this.props.currency !== "BRL" ?  
+			usHotelPrice : brazilHotelCost) * this.state.travelerCurrency
 		).toFixed(2)}${this.state.userCurrency}`;
 		const userFoodCost = `${(
-			usFoodCost * this.state.travelerCurrency
+			(this.props.currency !== "BRL" ?  
+			usFoodCost : brazilFoodCost) * this.state.travelerCurrency
 		).toFixed(2)}${this.state.userCurrency}`;
+
 		const userEntertainmentCost = `${(
-			usEntertainmentCost * this.state.travelerCurrency
+			(this.props.currency !== "BRL" ?  
+			usEntertainmentCost : brazilEntertainmentCost) * this.state.travelerCurrency
 		).toFixed(2)}${this.state.userCurrency}`;
+
 		const userTransportationCost = `${(
-			usTransportationCost * this.state.travelerCurrency
+			(this.props.currency !== "BRL" ?  
+			usTransportationCost : brazilTransportationCost) * this.state.travelerCurrency
 		).toFixed(2)}${this.state.userCurrency}`;
-		e.preventDefault();
+
 		this.setState({
 			userHotelPrice: userHotelPrice,
 			userFoodCost: userFoodCost,
@@ -85,10 +90,10 @@ class CurrencyBox extends React.Component {
 			usFoodCost: usFoodCost,
 			usTransportationCost: usTransportationCost,
 			usEntertainmentCost: usEntertainmentCost,
-			BrazilEntertainmentCost: BrazilEntertainmentCost,
-			BrazilFoodCost: BrazilFoodCost,
-			BrazilHotelCost: BrazilHotelCost,
-			BrazilTransportationCost: BrazilTransportationCost,
+			brazilEntertainmentCost: brazilEntertainmentCost,
+			brazilFoodCost: brazilFoodCost,
+			brazilHotelCost: brazilHotelCost,
+			brazilTransportationCost: brazilTransportationCost,
 			travelerNumber: travelerNumber,
 			nightsNumber: nightsNumber
 		});
