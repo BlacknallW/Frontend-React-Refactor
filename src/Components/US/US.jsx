@@ -11,7 +11,7 @@ import Navigation from "../Navigation/Navigation";
 
 export default class USContent extends React.Component {
 	state = {
-		location: "Florida"
+		location: "Miami"
 	};
 
 	handleImageClick = e => {
@@ -94,7 +94,7 @@ export default class USContent extends React.Component {
 								<div className="tile is-child">
 									<figure>
 										<img
-											id="Florida"
+											id="Miami"
 											src={Florida}
 											alt="Florida"
 											className="imagecontent"
@@ -103,7 +103,7 @@ export default class USContent extends React.Component {
 											}
 										/>
 										<figcaption className="subtitle">
-											Florida
+											Miami, Florida
 										</figcaption>
 									</figure>
 								</div>
@@ -119,7 +119,7 @@ export default class USContent extends React.Component {
 											}
 										/>
 										<figcaption className="subtitle">
-											New York
+											New York City, New York
 										</figcaption>
 									</figure>
 								</div>
@@ -139,7 +139,7 @@ export default class USContent extends React.Component {
 												}
 											/>
 											<figcaption className="subtitle">
-												Los Angeles
+												Los Angeles, California
 											</figcaption>
 										</figure>
 									</div>
@@ -155,7 +155,7 @@ export default class USContent extends React.Component {
 												}
 											/>
 											<figcaption className="subtitle">
-												San Diego
+												San Diego, California
 											</figcaption>
 										</figure>
 									</div>
@@ -183,7 +183,7 @@ export default class USContent extends React.Component {
 										<figure>
 											<img
 												className="imagecontent"
-												id="Alaska"
+												id="Juneau"
 												src={Alaska}
 												alt="Alaska"
 												onClick={e =>
@@ -191,7 +191,7 @@ export default class USContent extends React.Component {
 												}
 											/>
 											<figcaption className="subtitle">
-												Alaska
+												Juneau, Alaska
 											</figcaption>
 										</figure>
 									</div>
@@ -211,7 +211,7 @@ export default class USContent extends React.Component {
 												}
 											/>
 											<figcaption className="subtitle">
-												Las Vegas
+												Las Vegas, Nevada
 											</figcaption>
 										</figure>
 									</div>
@@ -219,7 +219,7 @@ export default class USContent extends React.Component {
 										<figure>
 											<img
 												className="imagecontent"
-												id="Hawaii"
+												id="Honolulu"
 												src={Hawaii}
 												alt="Hawaii"
 												onClick={e =>
@@ -227,7 +227,7 @@ export default class USContent extends React.Component {
 												}
 											/>
 											<figcaption className="subtitle">
-												Hawaii
+												Honolulu, Hawaii
 											</figcaption>
 										</figure>
 									</div>

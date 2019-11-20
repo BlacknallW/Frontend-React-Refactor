@@ -43,6 +43,11 @@ li {
 	border-radius: 5%;
 }
 
+.imagecontent:hover {
+	border: 5px solid black;
+	cursor: pointer;
+}
+
 figcaption {
 	text-align: center;
 	font-size: 14px;
